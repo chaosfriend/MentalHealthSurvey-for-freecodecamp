@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #top{
+                background-image: url(https://post.healthline.com/wp-content/uploads/2021/05/Mental-Health-Hub-2021-Key-Art.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 110%;
+                width: 100%;
+            }
+            h1{
+                color:white;
+                font-size: 100px;
+                text-align: center;
+                padding-top: 100px;;
+        
+            }
+            #description{
+                padding-top:150px;
+                padding-left: 20%;
+                padding-right:20%;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            #body{
+                background-image: linear-gradient(to top, #04353a, #24565d, #427982, #619ea9, #82c4d3);
+            }
+            #surveybody{
+                background-color: white;
+                margin-left: 10%;
+                margin-right: 10%;
+                text-align: left;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                padding-left:10%;
+                padding-right:10%;
+                padding-top: 2%;
+                padding-bottom: 10%;
+            }
+            footer{
+                background-color: #04353a;
+                height: 100px;
+                width:auto;
+                color:white;
+                font-size: 15px;
+                text-align: center;
+                padding-top: 2%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+        <h1 id="title">
+            Mental <br>Health <br>Survey
+        </h1>
+        <!--<img id="headerimg" src="https://post.healthline.com/wp-content/uploads/2021/05/Mental-Health-Hub-2021-Key-Art.png" alt="Girl looking towards the sun im a mountains as a methaphor of balance">-->
+    
+        <p id="description">
+            Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood. This Survey can help to understand if you need professional assistance regardimg your mental health
+        </p>
+    </div>
+        <div id="body">
+        <div id="surveybody">
+        <form id="survey-form"> 
+            <label for="name" id="name-label" class="labels"> Name: </label>
+            <input id="name"type="text" placeholder="Enter your name here" required> 
+            <br>
+            <label for="email" id="email-label" class="labels"> E-mail: </label>
+            <input id="email"type="email" placeholder="Enter your email here" required> 
+            <br>
+            <label for="number" id="number-label" class="labels"> Age: </label>
+            <input id="number" min="1" max="120" type="number" placeholder="Enter your age here">
+            <br>
+            <br>
+
+            <label for="overallfeeling" class="labels"> Overall how would you rate your mental health?</label>
+                <select id="dropdown" name="overallfeeling">
+                    <option disabled value="select"> Select an option </option>
+                    <option value="Excellent"> Excellent </option>
+                    <option value="Good"> Good </option>
+                    <option value="Fair"> Fair </option>
+                    <option value="Poor"> Poor </option>
+                </select>
+                    <div id="buttons">
+                    <p>During the past two weeks how often did you felt sad or  depressed?</p>
+                <label for="extremelyofthen"> 
+                    <input id="extremelyofthen" value="extremelyofthen" type="radio" name="pasttwoweeks">Extremely often
+                  </label>
+                  <br>
+                  <label for="often"> 
+                    <input id="ofthen" type="radio" value="often" name="pasttwoweeks">Often
+                  </label>
+                  <br>
+                  <label for="notsoofthen"> 
+                    <input id="notsooften" type="radio" value="notsooften" name="pasttwoweeks">Not so often
+                  </label>
+                  <br>
+                  <label for="notatall"> 
+                    <input id="notatall" type="radio" value="notatall" name="pasttwoweeks">Not at all
+                  </label>
+
+                  <p>During past two weeks how often did your mental health interfered with your personal relationship?</p>
+                  <label for="extremelyofthen"> 
+                    <input id="extremelyofthen" type="radio" value="extremelyofthen" name="personalrelationship">Extremely often
+                  </label>
+                  <br>
+                  <label for="often"> 
+                    <input id="ofthen" type="radio" value="often" name="personalrelationship">Often
+                  </label>
+                  <br>
+                  <label for="notsoofthen"> 
+                    <input id="notsooften" type="radio" value="notsooften" name="personalrelationship">Not so often
+                  </label>
+                  <br>
+                  <label for="notatall"> 
+                    <input id="notatall" type="radio" value="notatall"  name="personalrelationship">Not at all
+                  </label>
+
+                  <p>During the past two weeks how often did your mental health interfered with your ability to do your work or accomplish tasks?</p>
+                  <label for="extremelyofthen"> 
+                    <input id="extremelyofthen" type="radio" value="extremelyofthen" name="workrelationship">Extremely often
+                  </label>
+                  <br>
+                  <label for="often"> 
+                    <input id="ofthen" type="radio" value="often" name="workrelationship">Often
+                  </label>
+                  <br>
+                  <label for="notsoofthen"> 
+                    <input id="notsooften" type="radio" value="notsooften" name="workrelationship">Not so often
+                  </label>
+                  <br>
+                  <label for="notatall"> 
+                    <input id="notatall" type="radio"value="notatall"  name="workrelationship">Not at all
+                  </label>
+
+                  <p>Have you noticed any change in your diet habits?</p>
+                  <label for="yesieattoomuch"> 
+                    <input id="yesieattoomuch" value="yesieattoomuch"type="radio" name="diet">Yes I eat too much
+                  </label>
+                  <br>
+                  <label for="yesidontfeelhungry"> 
+                    <input id="yesidontfeelhungry" value="yesidontfeelhungry" type="radio" name="diet">Yes, I dont feel hungry
+                  </label>
+                  <br>
+                  <label for="notmuch"> 
+                    <input id="notmuch" value="notmuch" type="radio" name="diet">Not much
+                 </label>
+                 <br>
+                  <label for="notatall"> 
+                    <input id="notatall" value="notatall" type="radio" name="diet">Not at all
+                 </label>
+
+                    <p>When was the last time you felt good about yourself?</p>
+                    <label for="fewdaysago"> 
+                        <input id="fewdaysago" value="fewdaysago" type="radio" name="feelgood">Few days ago
+                      </label>
+                      <br>
+                      <label for="fewweeksago"> 
+                        <input id="fewweeksago" value="fewweeksago" type="radio" name="feelgood">Few weeks ago
+                      </label>
+                      <br>
+                      <label for="fewmonthsago"> 
+                        <input id="fewmonthsago" value="fewmonthsago"  type="radio" name="feelgood">Few months ago
+                    </label>
+                        <br>
+                      <label for="dontremember"> 
+                        <input id="dontremember" value="idontremember" type="radio" name="feelgood">I dont remember
+                  </label>
+                  <p>If "Yes", please select which of the family member(s) had a history of mental illness.</p>
+                  <label for="mother"><input id="mother" type="checkbox" value="mother" name="familyhistory">Mother
+                </label>
+                <br>
+                <label for="father"><input id="father" type="checkbox" value="father" name="familyhistory">Father
+                </label>
+                <br>
+                <label for="brother"><input id="brother" type="checkbox" value="brother" name="familyhistory">Brother
+                </label>
+                <br>
+                <label for="sister"><input id="sister" type="checkbox" value="sister" name="familyhistory">Sister
+                </label>
+                <br>
+                <label for="granparents"><input id="grandparents" type="checkbox" value="grandparents" name="familyhistory">Grandparentsr
+                </label>
+                <br>
+                <label for="other"><input id="other" type="checkbox" value="other" name="familyhistory">Other
+                </label>
+                <br>
+                <br>
+                <label for="extracomments">Additional comments</label>
+                <br>
+                <textarea id="extracomments" rows="4" cols="50">>
+                </textarea>
+                <br>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+                
+                </div>
+            </div>
+    </body>
+</div>
+    <footer>
+        <p>© Mariia Ujica <br> Assignment for FreeCodeCamp <br> 2022
+    </p>
+    </footer>
+
+</html>
